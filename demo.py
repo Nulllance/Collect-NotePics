@@ -212,7 +212,7 @@ def video_demo():
         frame = cv2.flip(frame, 1)
         if save_flag:
             # 保存照片
-            cv2.imwrite(str(path)+str(image_name)+, frame)
+            cv2.imwrite(str(path)+"/"+str(image_name)+".png", frame)
             print("hallo", info)
             save_flag = False
         cv2image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGBA)
