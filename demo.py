@@ -48,8 +48,6 @@ class initface():
         button_insert.place(relx=0.45, rely=0.4, relwidth=0.1, relheight=0.1)
 
         # -------------右边输出框-------------
-        # text_run = tk.Label(win, text=txt)
-        # text_run.place(relx=0.69, rely=0.1, relwidth=0.2, relheight=0.4)
         right_info()
 
         # -------------底部示例照片-------------
@@ -142,7 +140,7 @@ def insert_text(e):
     age = e.get()
     if age == '':
         info = "还没输入年龄,请输入年龄!!!"
-    txt = "性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
+    txt = "当前的参数\n"+"性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
 
     right_info()
 
@@ -150,28 +148,28 @@ def insert_text(e):
 def select0():
     global info, male, age, select, txt
     select = 0
-    txt = "性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
+    txt = "当前的参数\n""性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
     right_info()
 
 
 def select1():
     global info, male, age, select, txt
     select = 1
-    txt = "性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
+    txt = "当前的参数\n"+"性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
     right_info()
 
 
 def male0():
     global info, male, age, select, txt
     male = 0
-    txt = "性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
+    txt = "当前的参数\n"+"性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
     right_info()
 
 
 def male1():
     global info, male, age, select, txt
     male = 1
-    txt = "性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
+    txt = "当前的参数\n"+"性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
     right_info()
 
 
@@ -187,7 +185,7 @@ def button_command(x):
     else:
         info = "开始拍照辣"
         save_flag = True
-    txt = "性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
+    txt = "当前的参数\n"+"性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
     right_info()
 
 
@@ -235,8 +233,8 @@ if __name__ == '__main__':
     male = 1
     age = ''
     select = 0
-    info = "初始配置是男性,22岁,俯拍,请选择"
-    txt = "性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
+    info = "请先选择性别,填写年龄,选择拍摄角度,按确认键。再按对应的拍摄键"
+    txt = "当前的参数\n"+"性别:" + str(male) + "\n年龄:" + str(age) + "\n选用:" + str(select) + "\n\n" + str(info)
     path =r'C:\Users\75400\Desktop'
     image_name = '1'
     basebesk(win)
